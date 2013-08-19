@@ -3,9 +3,10 @@ Yii::setPathOfAlias('bootstrap', dirname(__FILE__).'/../extensions/bootstrap');
 return array(
 	'basePath'=>dirname(__FILE__).DIRECTORY_SEPARATOR.'..',
 	'name'=>'Джойсон ',
+    'timeZone'=>'Europe/Moscow',
 	'language' => 'ru',
 	// preloading 'log' component
-	'preload'=>array('log'),
+    'preload'=>array('log'),
 	'import'=>array(
 		'application.models.*',
 		'application.components.*',
