@@ -16,8 +16,8 @@
                 <div id="top-menu">
                     <ul>
                         <li><a href="/">Каталог препаратов</a></li>
-                        <li><a href="<?php echo $this->createUrl('/articles/dostavka.html');?>">Доставка и оплата</a></li>
-                        <li><a href="<?php echo $this->createUrl('/articles/voprosi-i-otveti.html');?>">Вопросы-ответы</a></li>
+                        <li><a href="<?php echo $this->createUrl('article/detail',array('id'=>3));?>">Доставка и оплата</a></li>
+                        <li><a href="<?php echo $this->createUrl('article/detail',array('id'=>4));?>">Вопросы-ответы</a></li>
                         <li><a href="<?php echo $this->createUrl('/site/contact');?>">Написать нам</a></li>
                     </ul>
                 </div>
@@ -57,8 +57,8 @@
             <div id="footer-menu">
                 <ul>
                     <li><a href="/">Каталог препаратов</a></li>
-                    <li><a href="<?php echo $this->createUrl('/articles/dostavka.html');?>">Доставка и оплата</a></li>
-                    <li><a href="<?php echo $this->createUrl('/articles/voprosi-i-otveti.html');?>">Вопросы-ответы</a></li>
+                    <li><a href="<?php echo $this->createUrl('article/detail',array('id'=>3));?>">Доставка и оплата</a></li>
+                    <li><a href="<?php echo $this->createUrl('article/detail',array('id'=>4));?>">Вопросы-ответы</a></li>
                     <li><a href="<?php echo $this->createUrl('/site/contact');?>">Написать нам</a></li>
                 </ul>
             </div>
