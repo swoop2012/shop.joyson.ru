@@ -34,6 +34,7 @@ class Controller extends CController
         $app = Yii::app();
         if($app->request->isAjaxRequest)
             return parent::beforeAction($action);
+        $this->setParams();
         $this->setReferer();
         $subaccountid = Cookie::get('subaccountid');
         $wmid = Cookie::get('wmid');

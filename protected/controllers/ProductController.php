@@ -9,8 +9,6 @@ class ProductController extends Controller
 	}
 	public function actionIndex($id=NULL)
 	{
-
-	    $this->setParams();
         $bonuses = OfferBonus::model()->findAll();
 	    $model = $this->loadModelExtRel('Product', array('subproduct'), array('t.id'=>(int)$id));
         $cs = Yii::app()->clientScript;

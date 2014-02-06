@@ -9,10 +9,9 @@ class CartController extends Controller{
     }
 
     public function actionIndex(){
-    $this->pageTitle='Корзина';
-	$this->setParams();
-	$data = Basket::getBasket();
-	$this->render('index',compact('data'));
+        $this->pageTitle='Корзина';
+        $data = Basket::getBasket();
+        $this->render('index',compact('data'));
     }
 
     public function actionChange(){

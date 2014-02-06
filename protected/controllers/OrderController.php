@@ -16,7 +16,6 @@ class OrderController extends  Controller{
         if(!Settings::getValue('ValidateKey'))
             throw new CHttpException('404','На данный момент функция оформления заказа недоступна');
         $this->pageTitle='Заказ';
-        $this->setParams();
         $orderForm = Yii::app()->request->getPost('OrderForm');
         $type = !empty($orderForm)?$orderForm['typeDelivery']:1;
         $model = new OrderForm('delivery'.$type);
